@@ -61,11 +61,12 @@ Use this public repository only for the reusable method and templates. Store rea
 
 Never copy a private memory repository into a public fork.
 
-## Development status
+## Release status
 
-Version `0.1.0` is a local release candidate. Review and test it before publishing or adding it to a marketplace.
+Version `0.1.1` is the first runtime-validated public release. The installed Skill was discovered on the next Codex turn, explicitly invoked, and verified in read-only Design mode with fictional identities only.
 
-Behavioral test cases are listed in [tests/behavior-cases.md](tests/behavior-cases.md).
+- Behavioral cases: [tests/behavior-cases.md](tests/behavior-cases.md)
+- Sanitized runtime validation: [tests/runtime-validation.md](tests/runtime-validation.md)
 
 ## License
 
@@ -113,5 +114,9 @@ codex plugin marketplace add Bigoranges-cn/multi-agent-memory-governance
 公开仓库只保存通用方法、模板和虚构示例。真实用户名、设备路径、项目事实和长期记忆必须保存在用户自己控制的私有仓库中。
 
 绝不能把真实私有记忆仓库直接复制或派生为公开仓库。
+
+### 发布状态
+
+`v0.1.1` 是首个通过本机运行时验证的公开版本。测试确认 Codex 能在下一轮发现该 Skill、显式调用它、加载治理模型，并在只读设计模式下保持身份隔离和审批边界。公开测试记录不包含真实用户名、设备、项目、路径或私有仓库信息。
 
 
