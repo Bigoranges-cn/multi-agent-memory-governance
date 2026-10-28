@@ -1,6 +1,6 @@
 # Runtime validation
 
-Version tested: `v0.1.0`
+Versions tested: direct Skill install `v0.1.0`; marketplace plugin install `v0.1.1`
 
 This is a sanitized record of the first local runtime test. It contains no real user, device, project, path, or private-repository data.
 
@@ -37,5 +37,26 @@ Observed behavior:
 
 Pass. No runtime defect was observed in the first read-only Design-mode test.
 
-Marketplace installation discovery was not part of this test; installation used the repository Skill path pinned to `v0.1.0`.
+## Marketplace installation and fresh-conversation discovery
+
+The public repository was added as a Codex marketplace source pinned to `v0.1.1`. Codex resolved the marketplace catalog, installed the plugin, and reported it as installed and enabled.
+
+The earlier direct Skill installation was moved to a recoverable backup before the marketplace plugin was installed, preventing two active copies from affecting discovery.
+
+| Check | Result |
+| --- | --- |
+| Marketplace source resolved from the public Git repository | Pass |
+| Catalog discovered plugin version `0.1.1` | Pass |
+| Plugin installed and enabled through the Codex plugin CLI | Pass |
+| Installed manifest and Skill entrypoint matched the pinned source by SHA-256 | Pass |
+| Fresh conversation loaded the Skill from the marketplace plugin cache | Pass |
+| Fresh conversation selected read-only Design mode | Pass |
+| Governance reference loaded from the marketplace plugin cache | Pass |
+| No repository or file was created by the scenario | Pass |
+
+The fresh-conversation prompt requested only a private multi-assistant, multi-device memory design. The response kept assistant, device, and terminal identities separate; treated proposals as inactive until owner approval; required target refresh before writes; used event-triggered rather than per-message synchronization; and prohibited credentials and raw transcripts.
+
+## Result
+
+Pass. Marketplace installation, next-conversation discovery, explicit Skill use, reference loading, and read-only behavior were all observed without accessing or modifying a real memory repository.
 

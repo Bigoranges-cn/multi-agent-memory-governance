@@ -1,7 +1,14 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "multi-agent-memory-governance",
-  "version": "0.1.1",
-  "description": "A review-gated workflow for private memory shared across AI assistants, devices, and terminal instances."
+  "version": "0.1.2",
+  "description": "A review-gated workflow for private memory shared across AI assistants, devices, and terminal instances.",
+  "author": {
+    "name": "Bigoranges-cn",
+    "url": "https://github.com/Bigoranges-cn"
+  },
+  "homepage": "https://github.com/Bigoranges-cn/multi-agent-memory-governance",
+  "repository": "https://github.com/Bigoranges-cn/multi-agent-memory-governance",
+  "license": "MIT"
 }
 

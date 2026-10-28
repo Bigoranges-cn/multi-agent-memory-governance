@@ -63,7 +63,7 @@ Never copy a private memory repository into a public fork.
 
 ## Release status
 
-Version `0.1.1` is the first runtime-validated public release. The installed Skill was discovered on the next Codex turn, explicitly invoked, and verified in read-only Design mode with fictional identities only.
+Version `0.1.2` records end-to-end marketplace validation. Codex installed `v0.1.1` from the public marketplace source, discovered it in a fresh conversation, loaded its governance reference, and completed a read-only Design-mode scenario without creating files.
 
 - Behavioral cases: [tests/behavior-cases.md](tests/behavior-cases.md)
 - Sanitized runtime validation: [tests/runtime-validation.md](tests/runtime-validation.md)
@@ -117,6 +117,6 @@ codex plugin marketplace add Bigoranges-cn/multi-agent-memory-governance
 
 ### 发布状态
 
-`v0.1.1` 是首个通过本机运行时验证的公开版本。测试确认 Codex 能在下一轮发现该 Skill、显式调用它、加载治理模型，并在只读设计模式下保持身份隔离和审批边界。公开测试记录不包含真实用户名、设备、项目、路径或私有仓库信息。
+`v0.1.2` 记录了 marketplace 端到端验证：Codex 从公开 marketplace 来源安装 `v0.1.1`，在全新对话中发现该 Skill、加载治理模型，并在不创建文件的只读设计模式下保持身份隔离和审批边界。公开测试记录不包含真实用户名、设备、项目、路径或私有仓库信息。
 
 
