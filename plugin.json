@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "multi-agent-memory-governance",
+  "version": "0.1.0",
+  "description": "A review-gated workflow for private memory shared across AI assistants, devices, and terminal instances."
+}
