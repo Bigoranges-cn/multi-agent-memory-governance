@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi-Agent Memory Governance"
+  short_description: "Build a private, review-gated memory repository"
+  default_prompt: "Use $multi-agent-memory-governance to design a private memory repository for my AI assistants and devices."
